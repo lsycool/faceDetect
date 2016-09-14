@@ -1,0 +1,77 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.facpp.picturedetect"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" >
+    </uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus" >
+    </uses-feature>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/facepp_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+         
+        <activity 
+			android:name=".Splash"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"></action>
+				<category android:name="android.intent.category.LAUNCHER"></category>
+			</intent-filter>
+		</activity>
+		
+        <activity
+            android:name=".HelloApp"
+            android:label="@string/app_name" >
+ <!-- 
+              <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+  -->
+        </activity>
+        <activity
+            android:name=".FaceTrain"
+            android:launchMode="singleTask" 
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_facedc" >
+            <intent-filter>
+                <action android:name="android.media.action.IMAGE_CAPTURE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_facerc" >
+        </activity>
+        <activity
+            android:name=".FaceCount"
+            android:label="@string/title_faceco" >
+        </activity>
+        <activity
+            android:name=".Facetrain_result"
+            android:label="@string/train_face_result" >
+        </activity>
+ 
+        <activity
+            android:name=".FaceDetec"
+            android:label="@string/title_facerc" >
+        </activity>
+    </application>
+
+</manifest>

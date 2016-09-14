@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="app_name">人脸识别检测</string>
+    <string name="hello_world">NUDT人脸识别检测系统</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_facerc">NUDT人脸识别</string>
+    <string name="title_facedc">NUDT人脸检测</string>
+    <string name="title_faceco">NUDT人数清点</string>
+    <string name="button_1">人脸样本训练</string>
+    <string name="button_2">人脸识别认证</string>
+	<string name="button_3">人数清点系统</string>
+	<string name="open_camera">获取照片</string>
+	<string name="train_face">样本训练</string>
+	<string name="train_face_result">人脸识别结果</string>
+	
+</resources>
