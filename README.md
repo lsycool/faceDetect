@@ -1,4 +1,4 @@
-# Student Contact APP
+# FaceDetect
 
 [lsycool](https://github.com/lsycool/PictureDetect)
 
